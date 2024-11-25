@@ -24,10 +24,8 @@ public class Proiect_java {
          l1.porneste();
         System.out.println("este pornita? "+l1.ONsauOFF());
         System.out.println("este pornita? "+lampaExterioara.ONsauOFF());
-    }
-}
-
- Object[] lampi = new Object[10];
+        
+          Object[] lampi = new Object[10];
         for (int i = 0; i < lampi.length; i++) {
             lampi[i] = new Lampa(); 
             System.out.println(lampi[i]);
@@ -62,3 +60,4 @@ public class Proiect_java {
         }
         
     }
+}
