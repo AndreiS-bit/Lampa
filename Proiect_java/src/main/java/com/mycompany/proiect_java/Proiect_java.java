@@ -26,3 +26,39 @@ public class Proiect_java {
         System.out.println("este pornita? "+lampaExterioara.ONsauOFF());
     }
 }
+
+ Object[] lampi = new Object[10];
+        for (int i = 0; i < lampi.length; i++) {
+            lampi[i] = new Lampa(); 
+            System.out.println(lampi[i]);
+           
+        }
+        Object[] lampiExterioare = new Object[10];
+        for (int i = 0; i < lampiExterioare.length; i++) {
+            lampiExterioare[i] = new LampaExterioara();
+            System.out.println(lampiExterioare[i]);
+        }
+        Object[] optiuniLampa = new Object[10];
+        for (int i = 0; i < optiuniLampa.length; i++) {
+            optiuniLampa[i] = new OptiuniLampa() {
+                @Override
+                public void porneste() {
+                    System.out.println("Pornește opțiunea lămpii.");
+                }
+
+                @Override
+                public void opreste() {
+                    System.out.println("Oprește opțiunea lămpii.");
+                    
+                }
+            };
+            System.out.println(optiuniLampa[i]);
+        }
+        
+        Object[] surselumina=new Object[10];
+        for(int i=0;i < surselumina.length ;i++){
+            surselumina[i]=new SursaIluminat();
+            System.out.println(surselumina[i]);
+        }
+        
+    }
