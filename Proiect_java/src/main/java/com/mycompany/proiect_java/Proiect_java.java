@@ -12,6 +12,7 @@ public class Proiect_java {
 
     public static void main(String[] args) {
         Lampa l1= new Lampa();
+        LampaExterioara lampaex = new LampaExterioara("25f",23,15,"rosie",true,true,false,true,2,"Metal");
         System.out.println(l1);
         LampaExterioara e1=new LampaExterioara();
         System.out.println(e1);
@@ -25,39 +26,47 @@ public class Proiect_java {
         System.out.println("este pornita? "+l1.ONsauOFF());
         System.out.println("este pornita? "+lampaExterioara.ONsauOFF());
         
-          Object[] lampi = new Object[10];
-        for (int i = 0; i < lampi.length; i++) {
-            lampi[i] = new Lampa(); 
-            System.out.println(lampi[i]);
-           
+          Object[] lampi = new Object[30];
+        for (int i = 0; i < 10; i++) {
+            
+        lampi[i] = new Lampa(10 + i, "Seria" + i,23+i,"Maro",true);
+   
         }
-        Object[] lampiExterioare = new Object[10];
-        for (int i = 0; i < lampiExterioare.length; i++) {
-            lampiExterioare[i] = new LampaExterioara();
-            System.out.println(lampiExterioare[i]);
+        for(int i= 10;i<20;i++){
+            lampi[i]=new LampaExterioara("25f",13+i,1+i,"rosie",false,false,false,false,2,"Metal");
         }
-        Object[] optiuniLampa = new Object[10];
-        for (int i = 0; i < optiuniLampa.length; i++) {
-            optiuniLampa[i] = new OptiuniLampa() {
-                @Override
-                public void porneste() {
-                    System.out.println("Pornește opțiunea lămpii.");
-                }
-
-                @Override
-                public void opreste() {
-                    System.out.println("Oprește opțiunea lămpii.");
-                    
-                }
-            };
-            System.out.println(optiuniLampa[i]);
+        for(int i =20;i<30;i++){
+          lampi[i] = new SursaIluminat("26f", 5 + i, 1 + i, 30 + i, "Serie" + i, 40 - i, "rosie", false, "Priza", "calda");
+        }
+        for(int  i=0;i<=29;i++){
+           System.out.println(lampi[i]);
         }
         
-        Object[] surselumina=new Object[10];
-        for(int i=0;i < surselumina.length ;i++){
-            surselumina[i]=new SursaIluminat();
-            System.out.println(surselumina[i]);
+        System.out.println(lampaex);
+        LampaExterioara lam1 = new LampaExterioara(lampaex);
+        System.out.println(lam1);
+        
+        System.out.println("---------------------------------------------------------------------");
+        
+    for (Object obj : lampi) {
+    if (obj instanceof Lampa) { // Verificăm dacă este instanță de Lampa
+        Lampa lampa = (Lampa) obj; // Cast la Lampa
+        if (lampa.getInaltime() > 10 && lampa.getcuBaterie()) {
+            System.out.println("Lampa: " + lampa);
         }
+    } else if (obj instanceof LampaExterioara) { // Verificăm dacă este instanță de LampaExterioara
+        LampaExterioara lampaExterioa = (LampaExterioara) obj; // Cast la LampaExterioara
+        if (lampaExterioara.getpornita() && lampaExterioa.getconectata()) {
+            System.out.println("LampaExterioara: " + lampaExterioa);
+        }
+    } else if (obj instanceof SursaIluminat) { // Verificăm dacă este instanță de SursaIluminat
+        SursaIluminat sursaIluminat = (SursaIluminat) obj; // Cast la SursaIluminat
+        if (sursaIluminat.getputere() > 50 && sursaIluminat.getdurata_lumina() > 100) {
+            System.out.println("SursaIluminat: " + sursaIluminat);
+        }
+    }
+}
+
         
     }
 }

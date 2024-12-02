@@ -9,8 +9,8 @@ package com.mycompany.proiect_java;
  * @author jh0nix
  */
 public class LampaExterioara extends Lampa {
-    public boolean  pornita;
-    public boolean conectata;
+    private boolean  pornita;
+    private boolean conectata;
     private boolean rezistent_apa;
     private int nivel_iluminare;
     private String tip_MaterialCarcasa;
@@ -23,11 +23,7 @@ public class LampaExterioara extends Lampa {
         this.nivel_iluminare=0;
         this.tip_MaterialCarcasa="necunoscut";
     }
-    public LampaExterioara(boolean pornita , boolean conectata,String serie,int marime_bec,int inaltime,String culoare,boolean cuBaterie ){
-        super(marime_bec ,serie,inaltime,culoare,cuBaterie);
-        this.conectata=conectata;
-        this.pornita=pornita;
-    }
+    
      public LampaExterioara(LampaExterioara obj) {
         super(obj); 
         if (obj != null) {
@@ -35,6 +31,14 @@ public class LampaExterioara extends Lampa {
             this.pornita = obj.pornita;
         }
     }
+     public LampaExterioara(String serie, int marime_bec, int inaltime, String culoare, boolean cuBaterie,  boolean conectata, boolean pornita, boolean rezistent_apa,int nivel_iluminare, String tip_MaterialCarcasa) {
+    super(marime_bec, serie, inaltime, culoare, cuBaterie); 
+    this.conectata = conectata;
+    this.pornita = pornita;
+    this.setrezistent_apa(rezistent_apa);
+    this.setnivel_iluminare(nivel_iluminare);
+    this.settip_MaterialCarcasa(tip_MaterialCarcasa);
+}
      
      public void setrezistent_apa(boolean rezistent_apa){
          this.rezistent_apa=rezistent_apa;
@@ -54,7 +58,19 @@ public class LampaExterioara extends Lampa {
      public String gettip_MaterialCarcasa(){
          return this.tip_MaterialCarcasa;
      }
+     public void setpornita(boolean pornita){
+         this.pornita=pornita;
+     }
+     public boolean getpornita(){
+         return this.pornita;
+     }
      
+     public void setconectata(boolean conectata){
+         this.conectata=conectata;
+     }
+     public boolean getconectata(){
+         return this.conectata;
+     }
      
  @Override
     public String toString() {

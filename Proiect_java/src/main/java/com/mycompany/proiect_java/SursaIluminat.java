@@ -9,9 +9,9 @@ package com.mycompany.proiect_java;
  * @author jh0nix
  */
 public class SursaIluminat extends Lampa{
-    public String tip_bec;
-    public int putere;
-    public int durata_lumina;
+    private String tip_bec;
+    private int putere;
+    private int durata_lumina;
     private String alimentare;
     private String tip_lumina;
     
@@ -21,12 +21,14 @@ public class SursaIluminat extends Lampa{
         this.putere=0;
         this.durata_lumina=0;
     }
-    public SursaIluminat(String tip_bec,int putere,int durata_lumina,int marime_bec,String serie,int inaltime , String culoare ,boolean cuBaterie){
-        super(marime_bec ,serie,inaltime ,culoare,cuBaterie);
-        this.tip_bec=tip_bec;
-        this.durata_lumina=durata_lumina;
-        this.putere=putere;
-    }
+    public SursaIluminat(String tip_bec, int putere, int durata_lumina, int marime_bec, String serie, int inaltime, String culoare, boolean cuBaterie, String alimentare, String tip_lumina) {
+    super(marime_bec, serie, inaltime, culoare, cuBaterie); // Apelăm constructorul din Lampa
+    this.tip_bec = tip_bec;
+    this.durata_lumina = durata_lumina;
+    this.putere = putere;
+    this.alimentare = alimentare; // Inițializăm alimentare
+    this.tip_lumina = tip_lumina; // Inițializăm tip_lumina
+}
    public SursaIluminat(SursaIluminat obj){
        super(obj);
         this.durata_lumina=obj.durata_lumina;
@@ -46,7 +48,27 @@ public class SursaIluminat extends Lampa{
    public String gettip_lumina(){
        return this.tip_lumina;
        }
+   public void settip_bec(String tip_bec){
+       this.tip_bec=tip_bec;
+       
+   }
+   public String gettip_bec(){
+       return this.tip_bec;
+   }
+   public void setputere(int putere){
+       this.putere=putere;
+   }
+   public int getputere(){
+       return this.putere;
+   }
    
+   public void setdurata_lumina(int durata_lumina){
+       this.durata_lumina=durata_lumina;
+       
+   }
+   public int getdurata_lumina(){
+       return this.durata_lumina;
+   }
    
     @Override
     public String toString() {

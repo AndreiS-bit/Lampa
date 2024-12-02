@@ -9,8 +9,8 @@ package com.mycompany.proiect_java;
  * @author jh0nix
  */
 public class Lampa extends OptiuniLampa {
-     public   String serie;
-  public  int marime_bec;
+     private   String serie;
+  private  int marime_bec;
   int  inaltime; 
   private String culoare;
   private boolean cuBaterie;
@@ -55,11 +55,26 @@ public class Lampa extends OptiuniLampa {
     public boolean getcuBaterie(){
         return this.cuBaterie;
     }
+    
+    public void setserie(String serie){
+        this.serie=serie;
+    }
+    public String getserie(){
+        return this.serie;
+    }
+    public void setmarime_bec(int marime_bec){
+        this.marime_bec=marime_bec;
+    }
+    
     @Override
     public void porneste(){
         this.setPornita(true);
 
     }
+    
+    
+    
+    
     @Override
     public void opreste(){
         this.setPornita(false);
