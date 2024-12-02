@@ -33,7 +33,7 @@ public class Proiect_java {
    
         }
         for(int i= 10;i<20;i++){
-            lampi[i]=new LampaExterioara("25f",13+i,1+i,"rosie",false,false,false,false,2,"Metal");
+            lampi[i]=new LampaExterioara("25f",13+i,1+i,"rosie",true,true,false,false,2,"Metal");
         }
         for(int i =20;i<30;i++){
           lampi[i] = new SursaIluminat("26f", 5 + i, 1 + i, 30 + i, "Serie" + i, 40 - i, "rosie", false, "Priza", "calda");
@@ -49,18 +49,18 @@ public class Proiect_java {
         System.out.println("---------------------------------------------------------------------");
         
     for (Object obj : lampi) {
-    if (obj instanceof Lampa) { // Verificăm dacă este instanță de Lampa
-        Lampa lampa = (Lampa) obj; // Cast la Lampa
+    if (obj instanceof Lampa) { 
+        Lampa lampa = (Lampa) obj; 
         if (lampa.getInaltime() > 10 && lampa.getcuBaterie()) {
             System.out.println("Lampa: " + lampa);
         }
-    } else if (obj instanceof LampaExterioara) { // Verificăm dacă este instanță de LampaExterioara
-        LampaExterioara lampaExterioa = (LampaExterioara) obj; // Cast la LampaExterioara
+    } else if (obj instanceof LampaExterioara) { 
+        LampaExterioara lampaExterioa = (LampaExterioara) obj; 
         if (lampaExterioara.getpornita() && lampaExterioa.getconectata()) {
             System.out.println("LampaExterioara: " + lampaExterioa);
         }
-    } else if (obj instanceof SursaIluminat) { // Verificăm dacă este instanță de SursaIluminat
-        SursaIluminat sursaIluminat = (SursaIluminat) obj; // Cast la SursaIluminat
+    } else if (obj instanceof SursaIluminat) { 
+        SursaIluminat sursaIluminat = (SursaIluminat) obj; 
         if (sursaIluminat.getputere() > 50 && sursaIluminat.getdurata_lumina() > 100) {
             System.out.println("SursaIluminat: " + sursaIluminat);
         }
