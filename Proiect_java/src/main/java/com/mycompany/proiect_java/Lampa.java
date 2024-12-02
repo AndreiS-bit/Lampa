@@ -65,6 +65,9 @@ public class Lampa extends OptiuniLampa {
     public void setmarime_bec(int marime_bec){
         this.marime_bec=marime_bec;
     }
+    public int getmarime_bec(){
+        return this.marime_bec;
+    }
     
     @Override
     public void porneste(){

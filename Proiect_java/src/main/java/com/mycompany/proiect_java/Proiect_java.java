@@ -33,7 +33,7 @@ public class Proiect_java {
    
         }
         for(int i= 10;i<20;i++){
-            lampi[i]=new LampaExterioara("25f",13+i,1+i,"rosie",true,true,false,false,2,"Metal");
+            lampi[i]=new LampaExterioara("25f",13+i,1+i,"rosie",false,false,false,false,2,"Metal");
         }
         for(int i =20;i<30;i++){
           lampi[i] = new SursaIluminat("26f", 5 + i, 1 + i, 30 + i, "Serie" + i, 40 - i, "rosie", false, "Priza", "calda");
