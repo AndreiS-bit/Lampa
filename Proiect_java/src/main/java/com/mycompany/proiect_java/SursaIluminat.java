@@ -22,12 +22,12 @@ public class SursaIluminat extends Lampa{
         this.durata_lumina=0;
     }
     public SursaIluminat(String tip_bec, int putere, int durata_lumina, int marime_bec, String serie, int inaltime, String culoare, boolean cuBaterie, String alimentare, String tip_lumina) {
-    super(marime_bec, serie, inaltime, culoare, cuBaterie); // Apelăm constructorul din Lampa
+    super(marime_bec, serie, inaltime, culoare, cuBaterie); 
     this.tip_bec = tip_bec;
     this.durata_lumina = durata_lumina;
     this.putere = putere;
-    this.alimentare = alimentare; // Inițializăm alimentare
-    this.tip_lumina = tip_lumina; // Inițializăm tip_lumina
+    this.alimentare = alimentare; 
+    this.tip_lumina = tip_lumina; 
 }
    public SursaIluminat(SursaIluminat obj){
        super(obj);

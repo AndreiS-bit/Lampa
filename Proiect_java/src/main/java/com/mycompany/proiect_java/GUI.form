@@ -24,79 +24,143 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="SERIEL" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                          <Component id="SERIE" pref="72" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="REZISTENT_APAL" min="-2" max="-2" attributes="0"/>
+                          <Component id="TIP_MATERIALL" min="-2" max="-2" attributes="0"/>
+                          <Component id="NIVEL_LUMINAL" min="-2" max="-2" attributes="0"/>
+                          <Component id="TIP_BECL" min="-2" max="-2" attributes="0"/>
+                          <Component id="PUTEREL" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="MARIME_BECL" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="INALTIMEL" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="CULOAREL" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="BATERIEL" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="PUTERE" alignment="1" pref="72" max="32767" attributes="0"/>
+                          <Component id="TIP_BEC" alignment="1" max="32767" attributes="0"/>
+                          <Component id="NIVEL_LUMINA" alignment="1" max="32767" attributes="0"/>
+                          <Component id="TIP_MATERIAL" alignment="1" max="32767" attributes="0"/>
+                          <Component id="REZISTENT_APA" alignment="1" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="MARIME_BECL" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="INALTIME" pref="72" max="32767" attributes="0"/>
+                                  <Component id="CULOARE" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="MARIME_BEC" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="BATERIE" alignment="0" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="INALTIME" max="32767" attributes="0"/>
-                              <Component id="CULOARE" alignment="0" max="32767" attributes="0"/>
-                              <Component id="MARIME_BEC" alignment="0" max="32767" attributes="0"/>
-                              <Component id="BATERIE" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="INALTIMEL" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="CULOAREL" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="BATERIEL" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="SERIEL" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="TIP_LAMPAL" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="TIP_LAMPA" max="32767" attributes="0"/>
+                                  <Component id="SERIE" pref="72" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                      <Component id="Stergere" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
                       <Component id="Adaugare" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Stergere" min="-2" pref="81" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="jButton1" min="-2" pref="81" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="181" max="32767" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="686" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="SERIEL" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="SERIE" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="MARIME_BECL" min="-2" max="-2" attributes="0"/>
-                  <Component id="MARIME_BEC" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="SERIEL" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="TIP_LAMPA" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="TIP_LAMPAL" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="SERIE" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="MARIME_BEC" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MARIME_BECL" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="INALTIME" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="INALTIMEL" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="CULOARE" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="CULOAREL" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="BATERIE" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BATERIEL" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="REZISTENT_APA" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="REZISTENT_APAL" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="TIP_MATERIAL" min="-2" max="-2" attributes="0"/>
+                          <Component id="TIP_MATERIALL" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="NIVEL_LUMINA" min="-2" max="-2" attributes="0"/>
+                          <Component id="NIVEL_LUMINAL" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TIP_BEC" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TIP_BECL" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="PUTERE" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="PUTEREL" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Adaugare" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Stergere" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jScrollPane1" alignment="0" min="-2" pref="438" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="INALTIMEL" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="INALTIME" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="CULOAREL" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="CULOARE" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="BATERIEL" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BATERIE" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="Adaugare" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="Stergere" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="58" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -112,16 +176,46 @@
         <Component class="javax.swing.JTable" name="tabel">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="5" rowCount="30">
+              <Table columnCount="10" rowCount="0">
                 <Column editable="true" title="SERIE" type="java.lang.Object"/>
                 <Column editable="true" title="MARIME BEC" type="java.lang.Object"/>
                 <Column editable="true" title="INALTIME" type="java.lang.Object"/>
                 <Column editable="true" title="CULOARE" type="java.lang.Object"/>
                 <Column editable="true" title="BATERIE" type="java.lang.Object"/>
+                <Column editable="true" title="REZISTENT APA" type="java.lang.Object"/>
+                <Column editable="true" title="TIP MATERIAL" type="java.lang.Object"/>
+                <Column editable="true" title="NIVEL LUMINA" type="java.lang.Object"/>
+                <Column editable="true" title="TIP BEC" type="java.lang.Object"/>
+                <Column editable="true" title="PUTERE" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
               <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                   <Title/>
                   <Editor/>
@@ -221,6 +315,56 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="StergereActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Filtrare"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="REZISTENT_APA">
+    </Component>
+    <Component class="javax.swing.JTextField" name="TIP_MATERIAL">
+    </Component>
+    <Component class="javax.swing.JTextField" name="NIVEL_LUMINA">
+    </Component>
+    <Component class="javax.swing.JTextField" name="TIP_BEC">
+    </Component>
+    <Component class="javax.swing.JTextField" name="PUTERE">
+    </Component>
+    <Component class="javax.swing.JTextField" name="TIP_LAMPA">
+    </Component>
+    <Component class="javax.swing.JLabel" name="TIP_LAMPAL">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="TIP_LAMPA"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="REZISTENT_APAL">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="REZISTENT APA"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TIP_MATERIALL">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="TIP MATERIAL"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="NIVEL_LUMINAL">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="NIVEL LUMINA"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TIP_BECL">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="TIP_BEC"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="PUTEREL">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="PUTERE"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
