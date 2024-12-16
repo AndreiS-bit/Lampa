@@ -3,9 +3,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.proiect_java;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.StringTokenizer;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 /**
  *
@@ -56,6 +63,7 @@ public class GUI extends javax.swing.JFrame {
         NIVEL_LUMINAL = new javax.swing.JLabel();
         TIP_BECL = new javax.swing.JLabel();
         PUTEREL = new javax.swing.JLabel();
+        Import = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -138,6 +146,13 @@ public class GUI extends javax.swing.JFrame {
 
         PUTEREL.setText("PUTERE");
 
+        Import.setText("IMPORT");
+        Import.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ImportActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -160,7 +175,7 @@ public class GUI extends javax.swing.JFrame {
                             .addComponent(TIP_MATERIAL, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(REZISTENT_APA, javax.swing.GroupLayout.Alignment.TRAILING)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
+                        .addGap(16, 25, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(MARIME_BECL)
@@ -182,10 +197,16 @@ public class GUI extends javax.swing.JFrame {
                                     .addComponent(TIP_LAMPA)
                                     .addComponent(SERIE, javax.swing.GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(Adaugare)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Stergere, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(Adaugare)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Stergere, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Import)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(41, 41, 41)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 686, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(23, 23, 23))
@@ -247,7 +268,9 @@ public class GUI extends javax.swing.JFrame {
                             .addComponent(Adaugare)
                             .addComponent(Stergere))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton1))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton1)
+                            .addComponent(Import)))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(58, Short.MAX_VALUE))
         );
@@ -418,6 +441,41 @@ public class GUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void ImportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImportActionPerformed
+        // TODO add your handling code here:
+        
+           JFileChooser fileChooser = new JFileChooser();
+        int returnValue = fileChooser.showOpenDialog(this); //FISIERRUL SELECTAT
+        if (returnValue == JFileChooser.APPROVE_OPTION) { //VERIFICA DACA FISIERUL ESTE VALID
+            File file = fileChooser.getSelectedFile();
+
+            try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+                String line;
+                DefaultTableModel model = (DefaultTableModel) tabel.getModel();
+
+
+                model.setRowCount(0);
+
+               
+                while ((line = br.readLine()) != null) {
+                    
+                    StringTokenizer st = new StringTokenizer(line, ",");
+                    String[] rowData = new String[model.getColumnCount()];
+
+                    int i = 0;
+                    while (st.hasMoreTokens()) {
+                        rowData[i++] = st.nextToken();
+                    }
+                    model.addRow(rowData);
+                }
+                JOptionPane.showMessageDialog(this, "Datele au fost încărcate cu succes!");
+            } catch (FileNotFoundException ex) {
+               
+            } catch (IOException ex) {
+                
+            }        }
+    }//GEN-LAST:event_ImportActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -461,6 +519,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel CULOAREL;
     private javax.swing.JTextField INALTIME;
     private javax.swing.JLabel INALTIMEL;
+    private javax.swing.JButton Import;
     private javax.swing.JTextField MARIME_BEC;
     private javax.swing.JLabel MARIME_BECL;
     private javax.swing.JTextField NIVEL_LUMINA;
